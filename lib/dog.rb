@@ -88,8 +88,8 @@ class Dog
 
   def self.find_by_name(name)
     sql = <<-SQL
-      SELECT * 
-      FROM dogs 
+      SELECT *
+      FROM dogs
       WHERE name = ?
     SQL
 
@@ -100,8 +100,8 @@ class Dog
 
   def update
     sql = <<-SQL
-      UPDATE dogs 
-      SET name = ?, breed = ? 
+      UPDATE dogs
+      SET name = ?, breed = ?
       WHERE id = ?
       SQL
 
